@@ -2,7 +2,7 @@
 
 include_once("Mage/Checkout/controllers/OnepageController.php");
 
-class Webguys_Simplecheckout_SimpleController extends Mage_Checkout_OnepageController {
+class Firegento_Simplecheckout_SimpleController extends Mage_Checkout_OnepageController {
 
 	protected function initLayout() {
 		$this->loadLayout();

@@ -1,6 +1,6 @@
 <?php
 
-class Webguys_Simplecheckout_Block_Shipping_Method extends Mage_Checkout_Block_Onepage_Shipping_Method { 
+class Firegento_Simplecheckout_Block_Shipping_Method extends Mage_Checkout_Block_Onepage_Shipping_Method {
     
     protected function _construct()
     {

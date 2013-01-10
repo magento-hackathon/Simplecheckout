@@ -2,28 +2,28 @@
 
 <config>
     <modules>
-        <Webguys_Simplecheckout>
+        <Firegento_Simplecheckout>
             <version>0.0.1</version>
-        </Webguys_Simplecheckout>
+        </Firegento_Simplecheckout>
     </modules>
     
 	<global>
 		
 		<blocks>
 			<simplecheckout>
-				<class>Webguys_Simplecheckout_Block</class>
+				<class>Firegento_Simplecheckout_Block</class>
 			</simplecheckout>
 		</blocks>
 		
  	 	<helpers>
 	       <simplecheckout>
-	           <class>Webguys_Simplecheckout_Helper</class>
+	           <class>Firegento_Simplecheckout_Helper</class>
 	       </simplecheckout>
 	    </helpers>
 	    
 	    <models>
 			<simplecheckout>
-				<class>Webguys_Simplecheckout_Model</class>
+				<class>Firegento_Simplecheckout_Model</class>
 			</simplecheckout>
 		</models>
 			    
@@ -35,7 +35,7 @@
     		<checkout>
     			<args>
     				<modules>
-    					<simplecheckout before="Mage_Checkout">Webguys_Simplecheckout</simplecheckout>
+    					<simplecheckout before="Mage_Checkout">Firegento_Simplecheckout</simplecheckout>
     				</modules>
     			</args>
     		</checkout>
@@ -43,9 +43,9 @@
     	
     	<layout>
             <updates>
-                <webguys_simplecheckout>
+                <Firegento_simplecheckout>
                 	<file>simplecheckout.xml</file>
-                </webguys_simplecheckout>
+                </Firegento_simplecheckout>
             </updates>
        </layout>
 

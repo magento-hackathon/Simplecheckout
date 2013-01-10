@@ -1,6 +1,6 @@
 <?php
 
-class Webguys_Simplecheckout_Block_Billing extends Mage_Checkout_Block_Onepage_Billing {
+class Firegento_Simplecheckout_Block_Billing extends Mage_Checkout_Block_Onepage_Billing {
 
     protected function _construct()
     {

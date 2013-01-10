@@ -3,11 +3,11 @@
 <config>
 
     <modules>
-        <Webguys_Simplecheckout>
+        <Firegento_Simplecheckout>
             <active>true</active>
             <codePool>local</codePool>
 
-        </Webguys_Simplecheckout>
+        </Firegento_Simplecheckout>
     </modules>
     
 </config>
