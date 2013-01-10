@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Webguys_Simplecheckout>
+            <version>0.0.1</version>
+        </Webguys_Simplecheckout>
+    </modules>
+    
+	<global>
+		
+		<blocks>
+			<simplecheckout>
+				<class>Webguys_Simplecheckout_Block</class>
+			</simplecheckout>
+		</blocks>
+		
+ 	 	<helpers>
+	       <simplecheckout>
+	           <class>Webguys_Simplecheckout_Helper</class>
+	       </simplecheckout>
+	    </helpers>
+	    
+	    <models>
+			<simplecheckout>
+				<class>Webguys_Simplecheckout_Model</class>
+			</simplecheckout>
+		</models>
+			    
+	</global>    
+	
+    <frontend>
+		
+    	<routers>
+    		<checkout>
+    			<args>
+    				<modules>
+    					<simplecheckout before="Mage_Checkout">Webguys_Simplecheckout</simplecheckout>
+    				</modules>
+    			</args>
+    		</checkout>
+    	</routers>
+    	
+    	<layout>
+            <updates>
+                <webguys_simplecheckout>
+                	<file>simplecheckout.xml</file>
+                </webguys_simplecheckout>
+            </updates>
+       </layout>
+
+    </frontend>
+    
+</config>

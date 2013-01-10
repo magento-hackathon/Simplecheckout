@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+    <modules>
+        <Webguys_Simplecheckout>
+            <active>true</active>
+            <codePool>local</codePool>
+
+        </Webguys_Simplecheckout>
+    </modules>
+    
+</config>
