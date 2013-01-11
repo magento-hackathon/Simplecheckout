@@ -26,7 +26,7 @@ class Firegento_Simplecheckout_SimpleController extends Mage_Checkout_OnepageCon
     			break;
     			
     		default:
-    			throw new Exception("Fehler ;)"); // TODO: Echte Exception werfen
+    			$this->_forward('index');
     			break;
     	
     	} 
