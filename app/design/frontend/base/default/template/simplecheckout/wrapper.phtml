@@ -29,17 +29,19 @@
 </div>
 <script type="text/javascript">countryRegions = <?php echo $this->helper('directory')->getRegionJson() ?></script>
 <ol class="opc" id="checkoutSteps">
-<?php $i=0; foreach($this->getSteps() as $_stepId => $_stepInfo): ?>
-<?php if (!$this->getChild($_stepId) || !$this->getChild($_stepId)->isShow()): continue; endif; $i++ ?>
+<?php $i=0; foreach($this->getSteps() as $_stepId => $_stepInfo): $i++; ?>
     <li id="opc-<?php echo $_stepId ?>" class="section<?php echo !empty($_stepInfo['allow'])?' allow':'' ?><?php echo !empty($_stepInfo['complete'])?' saved':'' ?>">
-        <div class="step-title">
+        <div class="step-title" onclick="setLocation('<?php echo $this->getUrl('*/*/'.$_stepId); ?>');">
             <span class="number"><?php echo $i ?></span>
             <h2><?php echo $_stepInfo['label'] ?></h2>
-            <a href="#"><?php echo $this->__('Edit') ?></a>
+            <a href="<?php echo $this->getUrl('*/*/'.$_stepId); ?>"><?php echo $this->__('Edit') ?></a>
         </div>
-        <div id="checkout-step-<?php echo $_stepId ?>" class="step a-item" >
-            <?php echo $this->getChildHtml($_stepId) ?>
-        </div>
+
+        <?php if ( $this->getChild($_stepId) && $this->getChild($_stepId)->isShow()): ?>
+            <div id="checkout-step-<?php echo $_stepId ?>" class="step a-item" >
+                <?php echo $this->getChildHtml($_stepId) ?>
+            </div>
+        <?php endif; ?>
     </li>
 <?php endforeach ?>
 </ol>
