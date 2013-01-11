@@ -65,7 +65,7 @@
         <reference name="content">           
             <block type="checkout/onepage" name="checkout.onepage" template="simplecheckout/wrapper.phtml">
 		
-		        <block type="simplecheckout/shipping" name="checkout.onepage.billing" as="billing" template="simplecheckout/steps/shipping.phtml"/>
+		        <block type="simplecheckout/shipping" name="checkout.onepage.shipping" as="shipping" template="simplecheckout/steps/shipping.phtml"/>
 		        
             </block>
         </reference>  
