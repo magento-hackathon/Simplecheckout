@@ -1,0 +1,15 @@
+Customer Login
+Customer Register
+NoRegion?
+Payment Compatiblity and JS error
+Error while shipping to different address -> don't save data
+test agreements at review page
+germansetup compatbility
+shipping-method is always active?
+create order and add Order-Buttons at review page
+display success page
+disable js and test checkout-progress
+change links in progress bar not working+
+shipping method is not set when only one exisits
+payment-data is not shown in progress-bar
+disable standard checkout und use simple instead or parallel (configurable)
